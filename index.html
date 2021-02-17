@@ -13,8 +13,8 @@
 	</head>
 	<body>
 		<main>
-			<h1>Meeting cost live</h1>
-			<h2>Current Cost</h2>
+			<h1>Møtekostnad teller</h1>
+			<h2>Nåværende kostnad</h2>
 			<p id="total">£0.00</p>
 
 			<button class="start" id="toggleMeeting">Start</button>
@@ -22,12 +22,12 @@
 
 			<details class="options-collapsable">
 				<summary>
-					<h2 class="options-title">Options</h2>
+					<h2 class="options-title">Innstillinger</h2>
 				</summary>
 
 				<div class="options">
 					<label class="attendees-label" for="attendees">
-						<span class="attendees-label-text">Number of people:</span>
+						<span class="attendees-label-text">Antall personer:</span>
 						<input
 							type="number"
 							pattern="[0-9]*"
@@ -39,7 +39,7 @@
 					</label>
 					<label class="salary-label" for="averageSalary">
 						<div class="salary-label-text">
-							<span>Average Gross Salary:</span>
+							<span>Gjennomsnittlig årslønn:</span>
 							<span id="averageSalaryDisplay"></span>
 						</div>
 						<input
@@ -49,24 +49,24 @@
 							step="10000"
 							value="500000"
 							min="30000"
-							max="900000"
+							max="1000000"
 						/>
 					</label>
 					<div class="currency-options">
-						<span>Currency:</span>
+						<span>Valuta</span>
 						<div class="currency-buttons">
-							<button class="currency-button" value="GBP">£</button>
-							<button class="currency-button" value="EUR">€</button>
-<button class="currency-button" value="USD">$</button>
-<button class="currency-button" value="NOK">NOK</button>
+							<!-- <button class="currency-button" value="GBP">£</button> !-->
+							<!-- ><button class="currency-button" value="EUR">€</button> !-->
+							<!-- <button class="currency-button" value="USD">$</button> !-->
+							<button class="currency-button" value="NOK">NOK</button>
 
 						</div>
 					</div>
 				</div>
 			</details>
 		</main>
-
-		<footer>Made with ❤️ by <a href="https://twitter.com/simonleggsays">Simon</a></footer>
+		
+		<footer>Originally made with ❤️ by <a href="https://twitter.com/simonleggsays">Simon</a><br> Shamelessly forked and modified by mole</footer>
 	</body>
 
 	<script src="./main.js"></script>
