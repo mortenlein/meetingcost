@@ -6,7 +6,8 @@ const averageSalaryDisplay = document.getElementById('averageSalaryDisplay')
 const currencyButtons = document.querySelectorAll('.currency-buttons button')
 
 const CURRENCIES = {
-	'GBP': { langCode: 'en-EN', currencyCode: 'GBP' },
+	'NOK': { langCode: 'nb-NO', currencyCode: 'NOK' },
+        'GBP': { langCode: 'en-EN', currencyCode: 'GBP' },
 	'EUR': { langCode: 'de-DE', currencyCode: 'EUR' },
 	'USD': { langCode: 'en-US', currencyCode: 'USD' },
 }
@@ -14,7 +15,7 @@ const CURRENCIES = {
 let timer
 let total = 0
 let increment = 0
-let selectedCurrency = CURRENCIES['GBP']
+let selectedCurrency = CURRENCIES['NOK']
 
 displayAverageSalary()
 
