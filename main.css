@@ -1,0 +1,134 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	font-variant-caps: all-small-caps;
+	letter-spacing: 2px;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	justify-content: space-between;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+
+#total {
+	font-size: 4em;
+	font-variant-numeric: slashed-zero tabular-nums;
+	margin-top: 0;
+}
+
+h2::first-letter {
+	font-variant-position: super;
+}
+
+button {
+	--primary: #000000;
+	--secondary: #00000017;
+
+	background-color: white;
+	border: 3px solid var(--primary);
+	border-radius: 3em;
+	width: 8em;
+	height: 3em;
+	font-size: 1em;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: var(--primary);
+	letter-spacing: 3px;
+	font-kerning: none;
+}
+
+button:hover {
+	transition: background-color 100ms ease-in, color 100ms ease-in;
+	background-color: var(--secondary);
+	cursor: pointer;
+}
+
+button.start {
+	--primary: #5be22f;
+	--secondary: #5ce22f17;
+}
+
+button.pause {
+	--primary: #e22f2f;
+	--secondary: #e22f2f17;
+}
+
+button.currency-button {
+	width: 2.5em;
+	height: 2em;
+	font-size: 1em;
+}
+
+.options-collapsable {
+	margin: 2em;
+	min-width: 300px;
+}
+
+.options-collapsable summary {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.options-title {
+	display: inline;
+}
+
+.options {
+	width: 100%;
+}
+
+label {
+	margin-bottom: 1em;
+}
+
+.attendees-label {
+	display: flex;
+	justify-content: space-between;
+}
+
+.attendees-label input {
+	width: 3em;
+}
+
+.salary-label {
+	display: flex;
+	flex-direction: column;
+}
+
+.salary-label-text {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.currency-options {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.currency-buttons {
+	display: inline;
+}
+
+footer {
+	margin-bottom: 2em;
+	width: 100%;
+	text-align: center;
+}
