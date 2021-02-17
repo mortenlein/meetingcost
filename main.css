@@ -6,6 +6,8 @@ body {
 	font-variant-caps: all-small-caps;
 	letter-spacing: 2px;
 	height: 100%;
+ background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
 }
 
 body {
@@ -37,8 +39,8 @@ h2::first-letter {
 }
 
 button {
-	--primary: #000000;
-	--secondary: #00000017;
+	--primary: #ffffff;
+	--secondary: #ffffff17;
 
 	background-color: white;
 	border: 3px solid var(--primary);

@@ -27,7 +27,7 @@ const calculateIncrement = () => {
 	const attendees = attendeesInput.valueAsNumber || 0
 	const averageSalary = averageSalaryInput.valueAsNumber
 	const workingDays = 233 // 365 days - 104 days (weekends) - 28 days (holiday)
-	const workingHours = workingDays * 8
+	const workingHours = workingDays * 7.5
 	const workingSeconds = workingHours * 60 * 60
 	const salaryPerSecond = averageSalary / workingSeconds
 
