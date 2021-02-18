@@ -2,13 +2,11 @@ html,
 body {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
-	font-variant-caps: all-small-caps;
+	font-family: 'Roboto', sans-serif;
 	letter-spacing: 2px;
 	height: 100%;
- background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); 
-color: #fff;
+	background: linear-gradient(45deg, #35394a 0%, #1f222e 100%);
+	color: #fff;
 }
 
 body {
@@ -27,10 +25,11 @@ main {
 
 h1 {
 	margin-bottom: 0;
+	font-weight: 300;
 }
 
 #total {
-	font-size: 4em;
+	font-size: 2em;
 	font-variant-numeric: slashed-zero tabular-nums;
 	margin-top: 0;
 }
@@ -40,7 +39,7 @@ button {
 	--primary: #ffffff;
 	--secondary: #ffffff17;
 
-	background-color: white;
+	background-color: transparent;
 	border: 3px solid var(--primary);
 	border-radius: 3em;
 	width: 8em;
@@ -73,6 +72,7 @@ button.currency-button {
 	width: 4.5em;
 	height: 2em;
 	font-size: 1em;
+	background-color: var(--secondary);
 }
 
 .options-collapsable {

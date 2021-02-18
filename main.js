@@ -7,7 +7,7 @@ const currencyButtons = document.querySelectorAll('.currency-buttons button')
 
 const CURRENCIES = {
 	'NOK': { langCode: 'nb-NO', currencyCode: 'NOK' },
-        'GBP': { langCode: 'en-EN', currencyCode: 'GBP' },
+	'GBP': { langCode: 'en-EN', currencyCode: 'GBP' },
 	'EUR': { langCode: 'de-DE', currencyCode: 'EUR' },
 	'USD': { langCode: 'en-US', currencyCode: 'USD' },
 }
@@ -65,7 +65,7 @@ toggleMeetingButton.addEventListener('click', () => {
 
 		increment = increment || calculateIncrement()
 
-		console.log(`This meeting will cost £${(increment * 60 * 60).toFixed(2)} if it lasts an hour`)
+		console.log(`This meeting will cost ${(increment * 60 * 60).toFixed(2)} if it lasts an hour`)
 
 		timer = setInterval(() => {
 			total = total + increment
@@ -75,7 +75,7 @@ toggleMeetingButton.addEventListener('click', () => {
 				{ style: 'currency', currency: selectedCurrency.currencyCode }
 			)
 			totalCost.innerText = totalCostString
-			document.title = `${totalCostString} – Meeting Cost Live`
+			document.title = `${totalCostString} – Møtekostnad`
 		}, 1000);
 	}
 })
