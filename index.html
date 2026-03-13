@@ -1,78 +1,14 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Møtekostnad</title>
-		<link rel="apple-touch-icon" sizes="180x180" href="/public/apple-touch-icon.png" />
-		<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png" />
-		<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png" />
-		<link rel="manifest" href="/public/site.webmanifest" />
-		<link rel="preconnect" href="https://fonts.gstatic.com">
-		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet"> 
-		<link rel="stylesheet" href="./main.css" />
-		
-		<meta name="description" content="Find out how much do your meetings actually cost?" />
-	</head>
-	<body>
-		
-		<main>
-			<br><br>
-			<h2>Møtekostnad teller</h2>
-			<h3>Nåværende kostnad</h3>
-			<p id="total">kr 0.00</p>
-
-			<button class="start" id="toggleMeeting">Start</button>
-			<div class="button-group"></div>
-
-			<details class="options-collapsable">
-				<summary>
-					<h2 class="options-title">Innstillinger</h2>
-				</summary>
-
-				<div class="options">
-					<label class="attendees-label" for="attendees">
-						<span class="attendees-label-text">Antall personer:</span>
-						<input
-							type="number"
-							pattern="[0-9]*"
-							name="attendees"
-							id="attendees"
-							value="2"
-							min="1"
-						/>
-					</label>
-					<label class="salary-label" for="averageSalary">
-						<div class="salary-label-text">
-							<span>Gjennomsnittlig årslønn:</span>
-							<span id="averageSalaryDisplay"></span>
-						</div>
-						<input
-							type="range"
-							name="averageSalary"
-							id="averageSalary"
-							step="10000"
-							value="500000"
-							min="30000"
-							max="1000000"
-						/>
-					</label>
-					<div class="currency-options">
-						<span>Valuta</span>
-						<div class="currency-buttons">
-							<!-- <button class="currency-button" value="GBP">£</button> !-->
-							<!-- ><button class="currency-button" value="EUR">€</button> !-->
-							<!-- <button class="currency-button" value="USD">$</button> !-->
-							<button class="currency-button" value="NOK">NOK</button>
-
-						</div>
-					</div>
-				</div>
-			</details>
-		</main>
-		
-		<footer>Originally made with ❤️ by <a href="https://twitter.com/simonleggsays">Simon</a><br> Shamelessly forked and modified by mole</footer>
-	</body>
-
-	<script src="./main.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Find out how much do your meetings actually cost? Modern React application for calculating meeting expenses in real-time." />
+    <title>Meeting Cost Tracker</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
